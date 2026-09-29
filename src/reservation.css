@@ -1,0 +1,70 @@
+.reservation-page {
+  min-height: 100vh;
+  text-align: center;
+  background-color: #f5f1e8;
+  padding-bottom: 50px;
+}
+
+.restaurant-header {
+  background-color: #6b3e26;
+  color: rgb(216, 201, 201);
+  padding: 18px;
+  margin-bottom: 45px;
+}
+
+.restaurant-header h1 {
+  margin: 0;
+  font-size: 50px;
+  letter-spacing: 2px;
+}
+
+.restaurant-header p {
+  margin: 5px 0 0;
+  font-size: 15px;
+}
+
+.reservation-page h2 {
+  font-size: 32px;
+  margin-bottom: 35px;
+}
+
+.reservation-box {
+  width: 400px;
+  margin: auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.reservation-box label {
+  display: block;
+  text-align: left;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.reservation-box input,
+.reservation-box select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.reservation-box button {
+  width: 100%;
+  padding: 10px;
+  background-color: #141414;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.reservation-box button:hover {
+  background-color: #6b3e26;
+}
