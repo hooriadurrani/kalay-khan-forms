@@ -1,0 +1,319 @@
+
+.menu-management-page {
+  min-height: 100vh;
+  padding-bottom: 50px;
+  text-align: center;
+  background: #f5f1e8;
+  color: #33241c;
+  font-family: Arial, sans-serif;
+}
+
+/* Restaurant header */
+.restaurant-header {
+  background: #6b3e26;
+  color: #f5e8d5;
+  padding: 22px;
+  margin-bottom: 35px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+.restaurant-header h1 {
+  margin: 0;
+  font-size: 42px;
+  letter-spacing: 3px;
+}
+
+.restaurant-header p {
+  margin: 7px 0 0;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+/* Page heading and Add button */
+.menu-heading {
+  max-width: 1100px;
+  margin: 0 auto 30px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.menu-management-page h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+.menu-heading h2 {
+  margin: 0;
+  text-align: left;
+}
+
+.menu-heading button {
+  padding: 13px 20px;
+  background: #6b3e26;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.menu-heading button:hover {
+  background: #4b2919;
+  transform: translateY(-1px);
+}
+
+/* Popup background */
+.menu-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(28, 19, 14, 0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Add/Edit popup */
+.menu-management-box.menu-modal {
+  width: 460px;
+  max-width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  margin: auto;
+  padding: 30px;
+  background: #fffdf9;
+  border-radius: 16px;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.menu-modal h2 {
+  margin: 0 0 8px;
+  color: #6b3e26;
+  font-size: 27px;
+  text-align: center;
+}
+
+/* Form fields */
+.menu-management-box label {
+  display: block;
+  text-align: left;
+  margin: 18px 0 7px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #493326;
+}
+
+.menu-management-box input,
+.menu-management-box select {
+  display: block;
+  width: 100%;
+  padding: 12px 13px;
+  margin: 0;
+  box-sizing: border-box;
+  background: #fff;
+  color: #33241c;
+  border: 1px solid #d8c9bc;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.menu-management-box input:focus,
+.menu-management-box select:focus {
+  border-color: #6b3e26;
+  box-shadow: 0 0 0 3px rgba(107, 62, 38, 0.12);
+}
+
+/* Form action buttons */
+.menu-form-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.menu-form-actions button {
+  flex: 1;
+  width: auto;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.menu-form-actions button[type="submit"] {
+  background: #6b3e26;
+  color: white;
+}
+
+.menu-form-actions button[type="submit"]:hover {
+  background: #4b2919;
+}
+
+.menu-form-actions button[type="button"] {
+  background: #e9dfd5;
+  color: #493326;
+}
+
+.menu-form-actions button[type="button"]:hover {
+  background: #d9c9bb;
+}
+
+.menu-management-box button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Existing menu items table */
+.menu-table-container {
+  max-width: 1100px;
+  width: calc(100% - 40px);
+  margin: 0 auto;
+  overflow-x: auto;
+  background: #fffdf9;
+  border-radius: 12px;
+  box-shadow: 0 5px 18px rgba(65, 42, 26, 0.10);
+}
+
+.menu-items-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.menu-items-table th,
+.menu-items-table td {
+  padding: 16px 14px;
+  border-bottom: 1px solid #eee5dc;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.menu-items-table th {
+  background: #6b3e26;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.menu-items-table td {
+  font-size: 14px;
+}
+
+.menu-items-table tbody tr {
+  transition: background 0.2s;
+}
+
+.menu-items-table tbody tr:hover {
+  background: #f8f0e7;
+}
+
+.menu-items-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Edit and Delete buttons */
+.menu-action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 9px;
+}
+
+.menu-action-buttons button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 14px;
+  border: none;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.menu-action-buttons button:first-child {
+  background: #6b3e26;
+  color: white;
+}
+
+.menu-action-buttons button:first-child:hover {
+  background: #4b2919;
+  transform: translateY(-1px);
+}
+
+.menu-action-buttons button:last-child {
+  background: #a83232;
+  color: white;
+}
+
+.menu-action-buttons button:last-child:hover {
+  background: #812424;
+  transform: translateY(-1px);
+}
+
+/* Status messages */
+.menu-management-page p[role="status"] {
+  margin: 15px auto;
+}
+
+.menu-management-page p[role="alert"] {
+  margin: 15px auto;
+}
+
+/* Mobile-friendly layout */
+@media (max-width: 600px) {
+  .restaurant-header h1 {
+    font-size: 32px;
+  }
+
+  .menu-heading {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .menu-heading h2 {
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .menu-heading button {
+    width: 100%;
+  }
+
+  .menu-management-box.menu-modal {
+    padding: 22px;
+  }
+
+  .menu-modal h2 {
+    font-size: 23px;
+  }
+
+  .menu-form-actions {
+    flex-direction: column;
+  }
+
+  .menu-table-container {
+    width: calc(100% - 20px);
+  }
+
+  .menu-items-table th,
+  .menu-items-table td {
+    padding: 12px 10px;
+  }
+
+  .menu-action-buttons {
+    flex-direction: column;
+  }
+}

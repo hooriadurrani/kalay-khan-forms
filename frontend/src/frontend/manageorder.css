@@ -1,0 +1,162 @@
+
+.manage-order-page {
+  min-height: 100vh;
+  text-align: center;
+  background-color: #f5f1e8;
+  padding-bottom: 50px;
+}
+
+.restaurant-header {
+  background-color: #6b3e26;
+  color: #ffffff;
+  padding: 18px;
+  margin-bottom: 45px;
+}
+
+.restaurant-header h1 {
+  margin: 0;
+  font-size: 50px;
+  letter-spacing: 2px;
+}
+
+.restaurant-header p {
+  margin: 5px 0 0;
+  font-size: 15px;
+}
+
+.manage-order-page h2 {
+  font-size: 32px;
+  margin-bottom: 35px;
+}
+
+.manage-order-box {
+  box-sizing: border-box;
+  width: calc(100% - 40px);
+  max-width: 400px;
+  margin: auto;
+  padding: 30px;
+  background-color: #ffffff;
+  color: #222222;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.manage-order-box label {
+  display: block;
+  text-align: left;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #222222;
+}
+
+.manage-order-box input,
+.manage-order-box select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #222222;
+}
+
+.manage-order-box button {
+  width: 100%;
+  padding: 10px;
+  background-color: #141414;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.manage-order-box button:hover {
+  background-color: #6b3e26;
+}
+
+.manage-order-box .cancel-order-button {
+  margin-top: 10px;
+  background-color: #6b3e26;
+}
+
+.order-error {
+  color: #dc3545;
+  text-align: left;
+  font-size: 14px;
+  margin-top: -15px;
+  margin-bottom: 15px;
+}
+
+.orders-table-container {
+  width: 95%;
+  margin: 0 auto 40px;
+  overflow-x: auto;
+}
+
+.orders-table {
+  width: 100%;
+  min-width: 700px;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  color: #222222;
+}
+
+.orders-table th,
+.orders-table td {
+  padding: 12px;
+  border: 1px solid #cccccc;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.orders-table th {
+  background-color: #6b3e26;
+  color: #ffffff;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.orders-table td {
+  background-color: #ffffff;
+  color: #222222;
+}
+
+.orders-table tbody tr:nth-child(even) td {
+  background-color: #f5f1e8;
+}
+
+.orders-table .edit-order-button,
+.orders-table .delete-order-button {
+  width: auto;
+  padding: 8px 12px;
+  margin: 3px;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.orders-table .edit-order-button {
+  background-color: #141414;
+}
+
+.orders-table .delete-order-button {
+  background-color: #b02a37;
+}
+
+.orders-table button:hover {
+  opacity: 0.85;
+}
+
+@media (max-width: 600px) {
+  .restaurant-header h1 {
+    font-size: 36px;
+  }
+
+  .manage-order-page h2 {
+    font-size: 26px;
+  }
+}

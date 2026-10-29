@@ -1,0 +1,187 @@
+.reservation-page {
+  min-height: 100vh;
+  text-align: center;
+  background-color: #f5f1e8;
+  padding-bottom: 50px;
+}
+
+.restaurant-header {
+  background-color: #6b3e26;
+  color: rgb(216, 201, 201);
+  padding: 18px;
+  margin-bottom: 45px;
+}
+
+.restaurant-header h1 {
+  margin: 0;
+  font-size: 50px;
+  letter-spacing: 2px;
+}
+
+.restaurant-header p {
+  margin: 5px 0 0;
+  font-size: 15px;
+}
+
+.reservation-page h2 {
+  font-size: 32px;
+  margin-bottom: 35px;
+}
+
+.reservation-box {
+  width: 400px;
+  margin: auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.reservation-box label {
+  display: block;
+  text-align: left;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.reservation-box input,
+.reservation-box select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.reservation-box button {
+  width: 100%;
+  padding: 10px;
+  background-color: #141414;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.reservation-box button:hover {
+  background-color: #6b3e26;
+}
+
+/* Reservation validation messages */
+.reservation-error {
+  color: red;
+  text-align: left;
+  font-size: 13px;
+  margin-top: -15px;
+  margin-bottom: 15px;
+}
+
+/* Reservations section */
+.reservation-list {
+  width: 100%;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.reservation-list h2 {
+  margin-bottom: 20px;
+}
+
+/* Refresh button */
+.refresh-reservations {
+  width: auto;
+  padding: 10px 18px;
+  margin-bottom: 20px;
+  background-color: #141414;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.refresh-reservations:hover {
+  background-color: #6b3e26;
+}
+
+/* Wide, readable table */
+.reservations-table-container {
+  box-sizing: border-box;
+  width: 95%;
+  max-width: 1400px;
+  margin: 20px auto 40px;
+  overflow-x: auto;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.reservations-table {
+  width: 100%;
+  min-width: 850px;
+  border-collapse: collapse;
+  background-color: white;
+  color: #222;
+}
+
+.reservations-table th,
+.reservations-table td {
+  padding: 14px 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.reservations-table th {
+  background-color: #6b3e26;
+  color: white;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.reservations-table tbody tr:nth-child(even) td {
+  background-color: #f5f1e8;
+}
+
+.reservations-table tbody tr:hover td {
+  background-color: #eee2d7;
+}
+
+.reservations-table td {
+  color: #222;
+  overflow-wrap: anywhere;
+}
+
+/* Edit and Delete buttons */
+.reservations-table .reservation-actions {
+  min-width: 150px;
+  white-space: nowrap;
+}
+
+.reservations-table .reservation-actions button {
+  width: auto;
+  display: inline-block;
+  padding: 8px 12px;
+  margin: 3px;
+  background-color: #141414;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.reservations-table .reservation-actions button:hover {
+  background-color: #6b3e26;
+}
+
+/* Smaller screens */
+@media (max-width: 600px) {
+  .reservations-table-container {
+    width: 100%;
+  }
+
+  .reservation-list h2 {
+    font-size: 26px;
+  }
+}
